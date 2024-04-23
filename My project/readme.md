@@ -42,5 +42,4 @@ The project successfully implements a web crawling and search application using 
 - Aliyev, E. (2021). Similarity-Based Patent Selection using Natural Language Processing.
 ## NOTE:
 Execution commands:
--FLASK_APP=app.py
--flask run  
+-FLASK_APP=app.py,flask run  
