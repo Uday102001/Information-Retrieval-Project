@@ -40,3 +40,7 @@ The project successfully implements a web crawling and search application using 
 - Grinberg, M. (2018). Flask web development. " O'Reilly Media, Inc.".
 - Copperwaite, M., & Leifer, C. (2015). Learning flask framework. Packt Publishing Ltd.
 - Aliyev, E. (2021). Similarity-Based Patent Selection using Natural Language Processing.
+## NOTE:
+Execution commands:
+FLASK_APP=app.py
+flask run  
