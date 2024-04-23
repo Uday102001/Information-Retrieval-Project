@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        body {
+            margin: 20px;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .result-card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Quotes Search</h1>
+        <form class="search-form" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="query" placeholder="Enter your query...">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        {% if results %}
+        <div class="results">
+            <h2>Top Results for "{{ query }}"</h2>
+            {% for result in results %}
+            <div class="result-card">
+                <h4>{{ result[0] }}</h4>
+                <p>Similarity Score: {{ result[1] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
